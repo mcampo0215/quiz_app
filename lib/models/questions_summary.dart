@@ -24,8 +24,8 @@ class QuestionsSummary extends StatelessWidget {
                   decoration: BoxDecoration(
                     color:
                         isCorrect
-                            ? const Color.fromARGB(255, 98, 228, 255)
-                            : const Color.fromARGB(255, 255, 131, 232),
+                            ? Colors.lightBlue
+                            :Colors.pinkAccent,
                     shape: BoxShape.circle,
                   ),
                   child: Text(
@@ -54,14 +54,14 @@ class QuestionsSummary extends StatelessWidget {
                       Text(
                         data['user_answer'] as String,
                         style: const TextStyle(
-                          color: Color.fromARGB(255, 255, 131, 232),
+                          color: Colors.lightBlue,
                           fontSize: 13,
                         ),
                       ),
                       Text(
                         data['correct_answer'] as String,
                         style: const TextStyle(
-                          color: Color.fromARGB(255, 98, 228, 255),
+                          color: Colors.pinkAccent,
                           fontSize: 13,
                         ),
                       ),
